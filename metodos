@@ -1,0 +1,57 @@
+package exemplos;
+
+public class SintaxeJava {
+
+	public static void imprimirMensagem(){
+		
+	    System.out.println("Olá, mundo! Este é meu primeiro programa em Java.");
+	}
+
+	public static int somar(int a, int b){
+		
+	    return a+b;
+	}
+
+	public static int multiplicar(int a, int b){
+		
+	    return a*b;
+	}
+
+	public static void verificarParImpar(int numero){
+		
+	    if (numero % 2 == 0){
+	    	
+	        System.out.println(numero + " é um número par.");
+	    }
+	    else{
+	    	
+	        System.out.println(numero + " é um número ímpar.");
+	    }
+	}
+	    
+	
+	public static int areaTriangulo(int base, int altura) {
+		 
+		return (base*altura)/2;
+	 }
+
+	// main
+	
+	public static void main(String[] args){
+		
+	    imprimirMensagem();
+
+	    int resultadoSoma = somar(6, 12);
+	    System.out.println("Soma: " + resultadoSoma);
+
+	    int resultadoMultiplicacao = multiplicar(3, 6);
+	    System.out.println("Multiplicação: " + resultadoMultiplicacao);
+
+	    int resultadoArea = areaTriangulo(4, 9);
+	    System.out.println("Área do triângulo: " + resultadoArea);
+	    
+	    verificarParImpar(18);
+	    verificarParImpar(3);
+	}
+
+}
